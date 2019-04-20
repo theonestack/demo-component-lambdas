@@ -14,7 +14,7 @@ demo_source_locations:
       # link to a role key above defined - mandatory
       role: default
       # example of code location relative to component directory
-      code: src/app.py
+      code: app.py
       # lambda runtime
       runtime: python3.6
       # function timeout (defaults to 30)
@@ -25,7 +25,7 @@ demo_source_locations:
       # link to a role key above defined - mandatory
       role: default
       # example of code location within 'lambdas folder' (legacy)
-      code: app.py
+      code: src
       # lambda runtime
       runtime: python3.6
       # function timeout (defaults to 30)
@@ -43,4 +43,4 @@ demo_source_locations:
       # function timeout (defaults to 30)
       timeout: 30
       # lambda function entrypoint
-      handler: app.index
+      handler: lambda_demo_app.index
