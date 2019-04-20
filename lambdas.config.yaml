@@ -1,0 +1,46 @@
+demo_source_locations:
+
+  # at least one role must be defined
+  roles:
+    default:
+      # using one of the default policies, or custom policies defined above
+      # defined at https://github.com/theonestack/cfhighlander/blob/develop/cfndsl_ext/config/managed_policies.yaml
+      policies_inline:
+        - cloudwatch-logs
+
+  # you can have multiple functions defined, each as key under 'functions'
+  functions:
+    lambdassource:
+      # link to a role key above defined - mandatory
+      role: default
+      # example of code location relative to component directory
+      code: src/app.py
+      # lambda runtime
+      runtime: python3.6
+      # function timeout (defaults to 30)
+      timeout: 30
+      # lambda function entrypoint
+      handler: app.index
+    relativesource:
+      # link to a role key above defined - mandatory
+      role: default
+      # example of code location within 'lambdas folder' (legacy)
+      code: app.py
+      # lambda runtime
+      runtime: python3.6
+      # function timeout (defaults to 30)
+      timeout: 30
+      # lambda function entrypoint
+      handler: app.index
+    absolutesource:
+      # link to a role key above defined - mandatory
+      role: default
+      # example of absolute code location. File is copied during processing
+      # of highlander tempalte
+      code: /tmp/code/lambda_demo_app.py
+      # lambda runtime
+      runtime: python3.6
+      # function timeout (defaults to 30)
+      timeout: 30
+      # lambda function entrypoint
+      handler: app.index
