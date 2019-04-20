@@ -4,7 +4,7 @@ This repository was initially created as test and
 example for [cfhighlander](https://github.com/theonestack/cfhighlander) functionality
 described in [PR#103](https://github.com/theonestack/cfhighlander/pull/103)
 
-TL;DR
+####**TL;DR**
 
 ```
 git clone https://github.com/theonestack/demo-component-lambdas
