@@ -33,7 +33,7 @@ highlanderdocoexample:
       code: src/app.py
 
       # lambda runtime
-      runtime: python3.6
+      runtime: python3.9
 
       # functions that are not named are having their name auto generated via cloudformation
       # this key defaults to false if not given

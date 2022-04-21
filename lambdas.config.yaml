@@ -16,7 +16,7 @@ demo_source_locations:
       # example of code location relative to component directory
       code: app.py
       # lambda runtime
-      runtime: python3.6
+      runtime: python3.9
       # function timeout (defaults to 30)
       timeout: 30
       # lambda function entrypoint
@@ -27,7 +27,7 @@ demo_source_locations:
       # example of code location within 'lambdas folder' (legacy)
       code: src
       # lambda runtime
-      runtime: python3.6
+      runtime: python3.9
       # function timeout (defaults to 30)
       timeout: 30
       # lambda function entrypoint
@@ -39,7 +39,7 @@ demo_source_locations:
       # of highlander tempalte
       code: /tmp/code/lambda_demo_app.py
       # lambda runtime
-      runtime: python3.6
+      runtime: python3.9
       # function timeout (defaults to 30)
       timeout: 30
       # lambda function entrypoint
